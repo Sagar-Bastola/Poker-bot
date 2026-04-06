@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+:root {
+  --felt: #0a3d1f;
+  --felt-light: #0f5029;
+  --gold: #c9a84c;
+  --gold-dim: #8a6f2e;
+  --cream: #f0e6cc;
+  --red: #d63031;
+  --white: #f8f4ec;
+  --dark: #060e08;
+  --text-dim: #7a9e85;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--dark);
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--cream);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, #0d2e1533 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, #1a0a0533 0%, transparent 50%);
 }
